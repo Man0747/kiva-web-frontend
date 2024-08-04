@@ -35,7 +35,6 @@ body {
 
 .shiningText {
   font-family: Cabinet Grotesk Variable;
-  font-size: 4rem;
   font-weight: bold;
   background: linear-gradient(90deg, #999999, #FFFFFF, #999999);
   background-size: 200% 100%;
@@ -53,4 +52,17 @@ body {
   }
 }
 
+.text-small {
+  font-size: 1rem;
+}
 
+.text-medium {
+  font-size: 2rem;
+}
+
+.text-large {
+  font-size: 3rem;
+}
+.text-extralarge {
+  font-size: 4rem;
+}
