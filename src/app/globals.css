@@ -32,12 +32,11 @@ body {
   }
 }
 
-
 .shiningText {
   font-family: Cabinet Grotesk Variable;
   font-size: 4rem;
   font-weight: bold;
-  background: linear-gradient(90deg, #999999, #FFFFFF, #999999);
+  background: linear-gradient(90deg, #999999, #ffffff, #999999);
   background-size: 200% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -52,5 +51,3 @@ body {
     background-position: 200% 0;
   }
 }
-
-
