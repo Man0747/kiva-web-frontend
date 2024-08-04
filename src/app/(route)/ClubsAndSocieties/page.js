@@ -1,9 +1,10 @@
+import ShiningText from '@/app/_components/ShiningText'
 import React from 'react'
 
 function ClubsAndSocietiesList() {
   return (
-    <div>
-      ClubsAndSocieties
+    <div className="flex justify-center">
+      <ShiningText  text="ClubsAndSocieties" />
     </div>
   )
 }
