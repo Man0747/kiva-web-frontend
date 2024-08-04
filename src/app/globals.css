@@ -31,3 +31,37 @@ body {
     text-wrap: balance;
   }
 }
+
+.shiningText {
+  font-family: Cabinet Grotesk Variable;
+  font-weight: bold;
+  background: linear-gradient(90deg, #999999, #ffffff, #999999);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.text-small {
+  font-size: 1rem;
+}
+
+.text-medium {
+  font-size: 2rem;
+}
+
+.text-large {
+  font-size: 3rem;
+}
+.text-extralarge {
+  font-size: 4rem;
+}
