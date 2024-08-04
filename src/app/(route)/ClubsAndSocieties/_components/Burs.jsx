@@ -1,17 +1,17 @@
 import React from "react";
 import Image from "next/image";
-const Council = () => {
+const Burs = () => {
   return (
     <div>
-      <div className="flex items-center justify-center ">
-        <div className="flex flex-col items-center space-y-4 max-w-4xl pt-1 pb-10">
+      <div className="flex-flex-cols-2 items-center justify-start ">
+        <div className="flex flex-col items-center space-y-4 max-w-4xl pt-6 pb-10">
           {" "}
           {/* Added padding top and bottom */}
           {/* Adjust the margin and set a max-width */}
           <Image
-            src="/council.png"
-            width={150}
-            height={150}
+            src="/burs.jpeg"
+            width={100}
+            height={100}
             alt="vansh"
             className="mb-2 rounded-full" // Reduced bottom margin
           />
@@ -23,7 +23,7 @@ const Council = () => {
             fill="#D9D9D9"
             className="absolute" // Make sure the ellipse doesn't interfere with the layout
           />
-          <span className="text-1xl font-medium tracking-tight text-center max-w-xl bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text   text-transparent">
+          <span className="text-sm font-medium tracking-tight text-left max-w-xl bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-transparent">
             The cabinet is responsible for assisting and supporting the school
             teams of teachers, house moderators in day to day affairs. These
             office bearers set role models to promote leadership for the entire
@@ -39,4 +39,4 @@ const Council = () => {
   );
 };
 
-export default Council;
+export default Burs;
