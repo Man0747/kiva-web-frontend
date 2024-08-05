@@ -10,7 +10,7 @@ import MemberCard from '../_components/MemberCard';
 function ClubDetailsPage({ params }) {
   return (
     <>
-      <ClubDetails clubname={params.clubname} />
+      <ClubDetails clubname={params.clubname} logoSrc="/Cabinet.jpeg" instagramLink="https://www.instagram.com/yourusername" whatsappLink="https://wa.me/yourphonenumber" linkedinLink="https://www.linkedin.com/in/yourusername"/>
 
       <div className="flex justify-center mt-8">
         <ShiningText text="Office" />

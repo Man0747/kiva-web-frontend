@@ -4,16 +4,16 @@ import Image from 'next/image';
 import { FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import ShiningText from '@/app/_components/ShiningText';
 
-function ClubDetails({ clubname }) {
+function ClubDetails({ clubname, logoSrc ,instagramLink, linkedinLink, whatsappLink }) {
   return (
-    <div className="flex flex-col p-8 justify-center">
+    <div className="flex flex-col p-8 items-center ">
       <div className="flex">
-        <Image className="rounded-2xl" src="/Cabinet.jpeg" alt="Student Council" width="200" height="200" />
+        <Image className="rounded-2xl" src={logoSrc} alt="Student Council" width="200" height="200" />
         <div className="ml-10">
           <ShiningText text={clubname} />
           <div className="flex space-x-4">
             <a
-              href="https://www.instagram.com/yourusername"
+              href={instagramLink}
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-pink-600 transition-colors duration-300"
@@ -22,7 +22,7 @@ function ClubDetails({ clubname }) {
               <FaInstagram size={30} />
             </a>
             <a
-              href="https://www.linkedin.com/in/yourusername"
+              href={linkedinLink}
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
@@ -31,7 +31,7 @@ function ClubDetails({ clubname }) {
               <FaLinkedin size={30} />
             </a>
             <a
-              href="https://wa.me/yourphonenumber"
+              href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-green-600 transition-colors duration-300"
