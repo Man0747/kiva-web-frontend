@@ -3,14 +3,11 @@ import ShiningText from './ShiningText';
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between">
+    <nav className="flex justify-center items-center py-2">
       <div className="flex ml-10 items-center">
-        <ShiningText text="Kiva" />
+        <ShiningText text="Kiva" size="extralarge"/>
       </div>
-      <div className="mr-10 flex items-center justify-center gap-4 text-lg">
-        <a href="/" className="hover:text-gray-500">Home</a>
-        <a href="/ClubsAndSocieties" className="hover:text-gray-500">ClubsAndSocieties</a>
-      </div>
+      
     </nav>
   );
 };
