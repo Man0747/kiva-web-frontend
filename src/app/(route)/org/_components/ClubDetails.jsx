@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import ShiningText from '@/app/_components/ShiningText';
 
-function ClubDetails({ clubname, logoSrc ,instagramLink, linkedinLink, whatsappLink }) {
+function ClubDetails({ clubname, logoSrc ,instagramLink, linkedinLink, whatsappLink ,description}) {
   return (
     <div className="flex flex-col p-8 items-center ">
       <div className="flex">
@@ -39,7 +39,11 @@ function ClubDetails({ clubname, logoSrc ,instagramLink, linkedinLink, whatsappL
             >
               <FaWhatsapp size={30} />
             </a>
+           
           </div>
+          <div className="my-4 ">
+            <p>{description}</p>
+            </div>
         </div>
       </div>
     </div>

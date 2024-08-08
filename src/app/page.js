@@ -1,6 +1,7 @@
-import ClubAndChapters from "./_components/ClubAndChapters";
-import ShiningText from "./_components/ShiningText";
 import React from "react";
+import ShiningText from "./_components/ShiningText";
+import ClubAndChapters from "./_components/ClubAndChapters";
+import { DATA } from '@/app/data';
 
 export default function Home() {
   return (
@@ -10,14 +11,22 @@ export default function Home() {
           <ShiningText text="Clubs And Chapters" />
         </div>
         <div className="flex flex-col items-center space-y-6">
-          <ClubAndChapters
-            logoSrc="/Cabinet.jpeg"
-            title="Student Cabinet"
-            whatsappLink="https://wa.me/yourphonenumber"
-            linkedinLink="linkedinLink"
-            instagramLink="instagramLink"
-            viewMoreLink="/org/StudentCabinet"
-          />
+          {DATA.map(club => {
+            // Encode the club name for the URL
+            const encodedClubName = encodeURIComponent(club.name);
+            
+            return (
+              <ClubAndChapters
+                key={club.name}
+                logoSrc={club.logo}
+                title={club.name}
+                whatsappLink={club.social.whatsapp}
+                linkedinLink={club.social.linkedin}
+                instagramLink={club.social.instagram}
+                viewMoreLink={`/org/${encodedClubName}`}
+              />
+            );
+          })}
         </div>
       </div>
     </div>
